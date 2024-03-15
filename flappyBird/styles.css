@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Silkscreen';
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    height: 100vh;
+    text-align: center;
+    align-items: start;
+}
+
+.main{
+    margin: 72px 0;
+    text-align: -webkit-center;
+}
+.main .scores{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 90px 0;
+}
+.main .score{
+    font-size: 24px;
+}
+
+h1{
+    font-size: 50px;
+    margin: 8px 0;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgb(255, 0, 0); 
+    /* -webkit-text-fill-color: transparent; */
+    width: min-content;
+}
+
+#board{
+    background-image: url("./bg1.jpg");
+    background-size: cover;
+    margin: auto 0;
+}
+
+.game-over{
+    display: none;
+    margin: auto 0;
+    font-size: 45px;
+}
+.game-over .gom{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body{
+        display: block;
+        height: 96vh;
+    }
+    
+    .main{
+        margin: 30px 0 0 0;
+    }
+
+    .main .scores{
+        margin: 15px 0;
+    }
+    h1{
+        font-size: 40px;
+        -webkit-text-stroke-width: 1px;
+        width: max-content;
+        letter-spacing: -6px;
+    }
+
+    .game-over{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 360px;
+        background-color: #eab721;
+        padding: 10px 0;
+    }
+    .game-over .gom{
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #board{
+        zoom: 0.94;
+    }
+
+}

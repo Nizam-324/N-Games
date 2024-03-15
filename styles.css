@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+@import url('https://use.fontawesome.com/releases/v5.0.7/css/all.css');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #00b0c7;
+    font-family: 'Poppins';
+}
+body::-webkit-scrollbar{display: none;}
+
+header{
+    /* background-color: #002c93; */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.home{
+    background-color: #000000;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.home .logo{
+    z-index: 2;
+    display: grid;
+    place-items: center;
+}
+.home .mlogo{
+    width: 10%;
+}
+.home .logo p{
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-family: 'Audiowide';
+    font-weight: 700;
+    -webkit-text-stroke-width: 0.4px; 
+    -webkit-text-stroke-color: rgb(255, 255, 255); 
+    -webkit-text-fill-color: transparent;
+    margin-top: 15px;
+}
+
+.logobg{
+    position: absolute;
+    height: 100vh;
+    width: -webkit-fill-available;
+    background-color: #0000004f;
+    z-index: 1;
+}
+
+/* ORBIT 1 */
+.home .orbit .bgimg{
+    position: absolute;
+    width: 70px;
+    animation: rotateR 10s infinite linear;
+}
+.home .orbit .img1{
+    top: 60px;
+}
+.home .orbit .img2{
+    top: -10px;
+    left: 80px;
+}
+.home .orbit .img3{
+    top: -40px;
+    left: 160px;
+}
+.home .orbit .img5{
+    top: -20px;
+    right: 90px;
+}
+.home .orbit .img6{
+    top: 40px;
+    right: 10px;
+}
+.home .orbit .img7{
+    top: 130px;
+    right: -30px;
+}
+.home .orbit .img8{
+    top: 220px;
+    right: -30px;
+}
+.home .orbit .img9{
+    bottom: 30px;
+    right: 10px;
+}
+.home .orbit .img10{
+    bottom: -20px;
+    right: 90px;
+}
+.home .orbit .img11{
+    bottom: -25px;
+    right: 200px;
+}
+.home .orbit .img12{
+    bottom: 10px;
+    left: 30px;
+}
+.home .orbit .img13{
+    bottom: 100px;
+    left: -20px;
+}
+.home .orbit .img14{
+    bottom: 190px;
+    left: -30px;
+}
+
+.home .orbit{
+    width: 400px;
+    height: 400px;
+    /* border: 2px solid black; */
+    position: absolute;
+    border-radius: 50%;
+    animation: rotateL 20s infinite linear;
+    background-color: transparent;
+}
+
+
+/* Orbit 2*/
+.home .orbit2 .bgimg{
+    position: absolute;
+    width: 70px;
+    animation: rotateL 10s infinite linear;
+}
+.home .orbit2 .img1{
+    top: 140px;
+    left: -10px;
+}
+.home .orbit2 .img2{
+    top: 30px;
+    left: 80px;
+}
+.home .orbit2 .img3{
+    top: -25px;
+    left: 180px;
+}
+.home .orbit2 .img5{
+    top: -30px;
+    right: 200px;
+}
+.home .orbit2 .img4{
+    top: 30px;
+    right: 75px;
+}
+.home .orbit2 .img7{
+    top: 130px;
+    right: 0px;
+}
+.home .orbit2 .img8{
+    top: 260px;
+    right: -35px;
+}
+.home .orbit2 .img9{
+    bottom: 130px;
+    right: -5px;
+}
+.home .orbit2 .img10{
+    bottom: 20px;
+    right: 90px;
+}
+.home .orbit2 .img11{
+    bottom: -25px;
+    right: 240px;
+}
+.home .orbit2 .img15{
+    bottom: 0px;
+    left: 130px;
+}
+.home .orbit2 .img13{
+    bottom: 100px;
+    left: 10px;
+}
+.home .orbit2 .img14{
+    bottom: 250px;
+    left: -40px;
+}
+.home .orbit2{
+    width: 600px;
+    height: 600px;
+    /* border: 2px solid black; */
+    position: absolute;
+    border-radius: 50%;
+    animation: rotateR 20s infinite linear;
+    background-color: transparent;
+}
+
+
+/* Orbit 3*/
+.home .orbit3 .bgimg{
+    position: absolute;
+    width: 70px;
+    animation: rotateR 10s infinite linear;
+}
+.home .orbit3 .img1{
+    top: 290px;
+    left: -30px;
+}
+.home .orbit3 .img2{
+    top: 80px;
+    left: 80px;
+}
+.home .orbit3 .img3{
+    top: -30px;
+    left: 280px;
+}
+.home .orbit3 .img5{
+    top: 0px;
+    right: 200px;
+}
+.home .orbit3 .img4{
+    top: 130px;
+    right: 40px;
+}
+.home .orbit3 .img7{
+    top: 360px;
+    right: -30px;
+}
+.home .orbit3 .img8{
+    bottom: 130px;
+    right: 45px;
+}
+.home .orbit3 .img9{
+    bottom: 240px;
+    right: -20px;
+}
+.home .orbit3 .img10{
+    bottom: 10px;
+    left: 180px;
+}
+.home .orbit3 .img11{
+    bottom: -10px;
+    right: 240px;
+}
+.home .orbit3 .img15{
+    bottom: 180px;
+    left: 10px;
+}
+.home .orbit3 .img13{
+    bottom: 80px;
+    left: 80px;
+}
+.home .orbit3 .img14{
+    bottom: 300px;
+    left: -30px;
+}
+
+.home .orbit3 .img16{
+    top: 240px;
+    right: -20px;
+}
+.home .orbit3 .img17{
+    bottom: -31px;
+    left: 325px;
+}
+.home .orbit3 .img18{
+    bottom: 45px;
+    right: 125px;
+}
+.home .orbit3 .img19{
+    top: 10px;
+    left: 180px 
+}
+.home .orbit3 .img20{
+    top: -35px;
+    right: 330px;
+}
+.home .orbit3 .img21{
+    top: 55px;
+    right: 110px;
+}
+.home .orbit3 .img22{
+    top: 180px;
+    left: 10px;
+}
+.home .orbit3{
+    width: 800px;
+    height: 800px;
+    /* border: 2px solid black; */
+    position: absolute;
+    border-radius: 50%;
+    animation: rotateL 20s infinite linear;
+    background-color: transparent;
+}
+
+
+/* Orbit 4 */
+.home .orbit4 .bgimg{
+    position: absolute;
+    width: 70px;
+    animation: rotateL 10s infinite linear;
+}
+.home .orbit4 .img1{
+    top: 370px;
+    left: -30px;
+}
+.home .orbit4 .img2{
+    top: 80px;
+    left: 140px;
+}
+.home .orbit4 .img3{
+    top: -30px;
+    left: 370px;
+}
+.home .orbit4 .img5{
+    top: 0px;
+    right: 275px;
+}
+.home .orbit4 .img4{
+    top: 150px;
+    right: 70px;
+}
+.home .orbit4 .img7{
+    top: 470px;
+    right: -40px;
+}
+.home .orbit4 .img8{
+    bottom: 120px;
+    right: 100px;
+}
+.home .orbit4 .img9{
+    bottom: 230px;
+    right: 20px;
+}
+.home .orbit4 .img10{
+    bottom: 10px;
+    left: 250px;
+}
+.home .orbit4 .img11{
+    bottom: -30px;
+    right: 420px;
+}
+.home .orbit4 .img15{
+    bottom: 150px;
+    left: 80px;
+}
+.home .orbit4 .img13{
+    bottom: 70px;
+    left: 160px;
+}
+.home .orbit4 .img14{
+    bottom: 355px;
+    left: -20px;
+}
+
+.home .orbit4 .img16{
+    top: 240px;
+    right: 20px;
+}
+.home .orbit4 .img17{
+    bottom: -25px;
+    left: 370px;
+}
+.home .orbit4 .img18{
+    bottom: 45px;
+    right: 190px;
+}
+.home .orbit4 .img19{
+    top: 10px;
+    left: 245px 
+}
+.home .orbit4 .img20{
+    top: -30px;
+    right: 400px;
+}
+.home .orbit4 .img21{
+    top: 70px;
+    right: 160px;
+}
+.home .orbit4 .img22{
+    top: 180px;
+    left: 50px;
+}
+.home .orbit4 .img23{
+    top: 270px;
+    left: 0px;
+}
+.home .orbit4 .img24{
+    top: 465px;
+    left: -35px;
+}
+.home .orbit4 .img25{
+    bottom: 245px;
+    left: 15px;
+}
+.home .orbit4 .img26{
+    bottom: -10px;
+    right: 300px;
+}
+.home .orbit4 .img6{
+    bottom: 345px;
+    right: -20px;
+}
+.home .orbit4 .img12{
+    top: 345px;
+    right: -20px;
+}
+
+.home .orbit4{
+    width: 1000px;
+    height: 1000px;
+    /* border: 2px solid black; */
+    position: absolute;
+    border-radius: 50%;
+    animation: rotateR 20s infinite linear;
+    background-color: transparent;
+}
+
+/* Orbit 5 */
+.home .orbit5 .bgimg{
+    position: absolute;
+    width: 70px;
+    animation: rotateR 10s infinite linear;
+}
+.home .orbit5 .img1{
+    top: 370px;
+    left: -30px;
+}
+.home .orbit5 .img2{
+    top: 80px;
+    left: 140px;
+}
+.home .orbit5 .img3{
+    top: -30px;
+    left: 370px;
+}
+.home .orbit5 .img5{
+    top: 0px;
+    right: 275px;
+}
+.home .orbit5 .img4{
+    top: 150px;
+    right: 70px;
+}
+.home .orbit5 .img7{
+    top: 470px;
+    right: -40px;
+}
+.home .orbit5 .img8{
+    bottom: 120px;
+    right: 100px;
+}
+.home .orbit5 .img9{
+    bottom: 230px;
+    right: 20px;
+}
+.home .orbit5 .img10{
+    bottom: 10px;
+    left: 250px;
+}
+.home .orbit5 .img11{
+    bottom: -30px;
+    right: 420px;
+}
+.home .orbit5 .img15{
+    bottom: 150px;
+    left: 80px;
+}
+.home .orbit5 .img13{
+    bottom: 70px;
+    left: 160px;
+}
+.home .orbit5 .img14{
+    bottom: 355px;
+    left: -20px;
+}
+
+.home .orbit5 .img16{
+    top: 240px;
+    right: 20px;
+}
+.home .orbit5 .img17{
+    bottom: -25px;
+    left: 370px;
+}
+.home .orbit5 .img18{
+    bottom: 45px;
+    right: 190px;
+}
+.home .orbit5 .img19{
+    top: 10px;
+    left: 245px 
+}
+.home .orbit5 .img20{
+    top: -30px;
+    right: 400px;
+}
+.home .orbit5 .img21{
+    top: 70px;
+    right: 160px;
+}
+.home .orbit5 .img22{
+    top: 180px;
+    left: 50px;
+}
+.home .orbit5 .img23{
+    top: 270px;
+    left: 0px;
+}
+.home .orbit5 .img24{
+    top: 465px;
+    left: -35px;
+}
+.home .orbit5 .img25{
+    bottom: 245px;
+    left: 15px;
+}
+.home .orbit5 .img26{
+    bottom: -10px;
+    right: 300px;
+}
+.home .orbit5 .img6{
+    bottom: 345px;
+    right: -20px;
+}
+.home .orbit5 .img12{
+    top: 345px;
+    right: -20px;
+}
+
+.home .orbit5 .img27{
+    bottom: 445px;
+    right: -50px;
+}
+.home .orbit5 .img28{
+    top: -50px;
+    right: 495px;
+}
+.home .orbit5 .img29{
+    bottom: 455px;
+    left: -45px;
+}
+.home .orbit5 .img30{
+    bottom: -55px;
+    right: 515px;
+}
+.home .orbit5 .img31{
+    bottom: -55px;
+    left: 495px;
+}
+.home .orbit5 .img32{
+    top: -50px;
+    left: 500px;
+}
+.home .orbit5 .img33{
+    bottom: 550px;
+    left: -55px;
+}
+.home .orbit5 .img34{
+    bottom: 550px;
+    right: -50px;
+}
+
+.home .orbit5{
+    width: 1200px;
+    height: 1200px;
+    /* border: 2px solid black; */
+    position: absolute;
+    border-radius: 50%;
+    animation: rotateL 20s infinite linear;
+    background-color: transparent;
+}
+
+/* =========================== */
+
+@keyframes rotateR {
+    100%{
+      transform: rotate(360deg);
+    }
+}
+@keyframes rotateL {
+    100%{
+      transform: rotate(-360deg);
+    }
+}
+/* =========================== */
+
+.curve-div{
+    background-color: rgb(255, 255, 25);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 50% ;
+    border-top-right-radius: 50%;
+    display: grid;
+    place-items: center;
+    padding: 2px 0;
+    color: #000;
+    z-index: 1;
+}
+
+.container{
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    align-items: end;
+}
+
+/* .gBtn{
+    display: grid;
+    grid-template-columns: repeat(4, 160px);
+    gap: 16px;
+    margin: 20px 0;
+} */
+
+.gBtn {
+    display: flex;
+    grid-template-columns: repeat(4, 160px);
+    gap: 16px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+}
+
+.game{
+    width: 120px;
+    height: auto;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    transition: transform .3s;
+    border: 5px solid #00b0c7;
+}
+.game:hover{
+    transform: scale(1.1);
+    background-color: #00b0c7;
+    border: 5px solid #ffffff;
+}
+.game img{
+    width: 100px;
+    border-radius: 8px;
+}
+.game a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+.container .footer{
+    width: 100%;
+    color: #fff;
+    /* clip-path: polygon(70% 50%, 0% 0%, 0% 100%, 100% 100%, 100% 0%); */
+}
+.container .footer .footerCont a{
+    text-decoration: none;
+    color: #003c58;
+    font-size: 40px;
+    margin: 16px;
+    /* border: 3px solid #004869; */
+    padding: 8px 10px;
+    border-radius: 50%;
+    
+}
+
+.container .footer .footerCont .contBrd{
+    clip-path: polygon(0% 50%, 50% 100%, 100% 50%, 53% 0%);
+    background-color: #0087c6;
+    position: relative;
+    bottom: -44px;
+    transition: .3s; 
+}
+.container .footer .footerCont .contBrd:hover{
+    background-color: #fff;
+    transform: scale(1.08);
+    z-index: 1;
+}
+
+.container .footer .footerCont{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 140px;
+} 
+
+.container .footer .ftrlogo{
+    width: 3%;
+    margin-right: 25px;
+}
+.container .footer p{
+    background-color: #004869;
+    color: #2ebdff;
+    font-weight: bold;
+    padding: 50px 0;
+    padding-left: 140px;
+    letter-spacing: 6px;
+    display: flex;
+    align-items: center;
+    font-family: 'Tulpen One';
+    font-size: 70px;
+}
+
+
+@media (max-width: 480px) {
+    /* Mobile */
+    .home .mlogo{
+        width: 22%;
+    }
+    .home .logo p{
+        font-size: 32px;
+    }
+
+    /* .gBtn{
+        grid-template-columns: repeat(2, 160px);
+    } */
+    
+    .gBtn{
+        width: 100%;
+    }
+
+    .home .orbit, .home .orbit2, .home .orbit3, .home .orbit4, .home .orbit5{
+        zoom: .7;
+    }
+
+    .container .footer .footerCont{
+        justify-content: center;
+        margin-right: 0;
+    }
+    .container .footer p{
+        font-size: 40px;
+        padding-left: 0;
+        /* align-items: flex-end; */
+        justify-content: center;
+        padding: 60px 0 30px 0;
+    }
+    .container .footer .ftrlogo{
+        width: 5%;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    /* Tablet */
+    .home .mlogo{
+        width: 20%;
+    }
+    .home .logo p{
+        font-size: 42px;
+    }
+
+    /* .gBtn{
+        grid-template-columns: repeat(3, 160px);
+    } */
+
+    .gBtn{
+        width: 70%;
+    }
+
+    .container .footer .footerCont{
+        justify-content: center;
+        margin-right: 0;
+    }
+    .container .footer p{
+        font-size: 55px;
+        justify-content: center;
+        padding: 60px 0 30px 0;
+    }
+    .container .footer .ftrlogo{
+        width: 4%;
+        margin-right: 20px;
+    }
+    .container .footer .footerCont .contBrd{
+        bottom: -49px;
+    }
+    .container .footer .footerCont a{
+        font-size: 50px;
+    }
+}

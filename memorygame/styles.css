@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+/* navBar style */
+.nvgame{
+    width: 100px;
+}
+/* ============ */
+body{
+    background-color: #008be8;
+    /* margin: 0 10px; */
+    display: grid;
+    align-items: center;
+    /* height: 100vh; */
+    font-family: 'Poppins';
+}
+
+h1{
+    margin: 50px auto;
+    text-align: center;
+}
+
+.game{
+    margin: 30px auto;
+    background-color: #003c63;
+    border-radius: 15px;
+    border: 8px solid #003c63;
+}
+
+.tiles{
+    margin: 0 auto;
+    width: max-content;
+    display: grid; 
+    grid-template-columns: repeat(4, 80px);
+    gap: 16px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #afdfff;
+}
+
+.tile{
+    height: 80px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile img{
+    width: 75%;
+}
+
+.game .message{ 
+    display: none;
+    position: absolute;
+    height: fit-content;
+    background-color: rgb(251, 177, 177);
+    padding: 25px 30px;
+    width: 170px;
+    border-radius: 12px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px darkred dashed;
+    color: darkred;
+    font-weight: bold;
+}
+
+.message button{
+    border: none;
+    background: none;
+}
+.message button i{
+    display: flex;
+    padding: 8px;
+    margin-top: 18px;
+    background-color: darkred;
+    color: white;
+    border-radius: 5px;
+}
+
+.timer{
+    text-align: right;
+    background-color: #003c63;
+    color: #fff;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .tiles{
+        grid-template-columns: repeat(4, 70px);
+        gap: 10px;
+        padding: 10px;
+    }
+    .tile{
+        height: 70px;
+    }
+
+}

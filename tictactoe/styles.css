@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --winning-blocks: #ffffff20;
+}
+
+body{
+    color: #ffffff;
+    font-family: 'Pixelify Sans' ;
+}
+
+h1{
+    font-size: 54px;
+}
+h2{
+    font-family: 'Comfortaa';
+}
+
+.container{
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000819;
+}
+
+#gameBoard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    font-family: 'Comfortaa';
+    margin: 25px 0;
+}
+
+.box{
+    background-color: #000000;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    border-radius: 8px;
+    
+}
+.box i{
+    font-size: 90%;
+}
+.box.x{
+    color: #ff0040;
+    font-weight: 600;
+}
+.box.o{
+    color: #34badb;
+    font-weight: 600;
+}
+
+button {
+    padding: 10px 20px ;
+    border-radius: 10px;
+    background-color: var(--orange);
+    border: 3px solid #ff0040;
+    color: #ff0040;
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+    margin-top: 15px;
+    font-family: inherit;
+    background-color: #fff;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+#message{
+    display: none;
+    height: 150px;
+    width: 300px;
+    background-color: #34badb;
+    position: absolute;
+    padding: 30px 0;
+    margin: auto;
+    text-align: center;
+    border-radius: 12px;
+    border: #ff0040 4px dashed;
+    color: #ff0040;
+}
+
+@media (max-width: 480px) {
+    #gameBoard{
+        margin: 75px 0;
+    }
+
+    .box{
+        width: 120px;
+        height: 120px;
+        font-size: 90px;
+    }
+}

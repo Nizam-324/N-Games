@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <title></title>
+    <style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		.navbtn{
+			font-family: 'Poppins';
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: #036bb1;
+			padding: 8px 14px;
+			color: white;
+			z-index: 10;
+			border: none;
+			border-radius: 5px;
+		}
+
+		.nvgBtn{
+			font-family: 'Poppins';
+			position: absolute;
+			/* display: none; */
+    		/* background-color: #00598c; */
+    		width: min-content;
+    		height: 100vh;
+    		padding: 0 10px;
+    		flex-direction: column;
+    		justify-content: center;
+			z-index: 4;
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0%);
+            }
+        }
+		@keyframes slideUp {
+            0% {
+                transform: translateY(0%);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+
+    	.nvgame{
+			font-family: 'Poppins';
+        	width: 130px;
+        	/* height: 120px; */
+        	background-color: #c40000;
+        	padding: 10px;
+        	text-align: center;
+        	border-radius: 12px;
+        	transition: transform .3s;
+        	border: 5px solid #1f5b62;
+			margin: 10px 0;
+			font-size: smaller;
+    	}
+    	.nvgame:hover{
+        	/* transform: scale(1.1); */
+
+        	background-color: #00b0c7;
+        	border: 5px solid #ffffff;
+    	}
+    	.nvgame img{
+       		width: 60px;
+        	border-radius: 5px;
+    	}
+
+		.nvgame img.one{
+			width: unset;
+			height: 60px;
+		}
+
+    	.nvgame a{
+			font-family: 'Poppins';
+        	text-decoration: none;
+        	font-weight: 500;
+        	color: #ffffff;
+    	}
+
+    </style>
+</head>
+
+    <!-- navbar.html -->
+	<button class="navbtn" onclick="toggleNavBtn()">Menu</button>
+	<nav>
+    	<div class="nvgBtn" id="nvgBtn">
+			<div class="nvgame"> <a href="/index.html"> <img class="one" src="../my-n-logo.svg" alt=""> <br> Home</a></div>
+        	<div class="nvgame"> <a href="/infinitrunner/index.html"> <img class="one" src="../infinitrunner/imgs/inlogo.png" alt=""> <br> Infinite Runner</a></div>
+        	<div class="nvgame"><a href="/memorygame/index.html"> <img src="../memorygame/images/mglogo.png" alt=""> <br> Memory Game</a></div>
+        	<div class="nvgame"><a href="/snake/index.html"> <img src="../snake/cslogo.png" alt=""> <br> Classic Snake</a></div>
+        	<div class="nvgame"><a href="/tictactoe/index.html"> <img src="../tictactoe/tttlogo.png" alt=""> <br> Tic Tac Toe</a></div>
+			<div class="nvgame"><a href="/flappyBird/index.html"> <img src="../flappyBird/fblogo.png" alt=""> <br> Tic Tac Toe</a></div>
+
+		</div>
+  	</nav>
+
+	<script>
+		function toggleNavBtn() {
+            var nvgBtn = document.getElementById("nvgBtn");
+            if (nvgBtn.style.display === "flex") {
+                nvgBtn.style.animation = "slideUp 0.5s ease forwards";
+                setTimeout(() => {
+                    nvgBtn.style.display = "none";
+                }, 500); // Adjust timing based on animation duration
+            } else {
+                nvgBtn.style.display = "flex";
+                nvgBtn.style.animation = "slideDown 0.5s ease forwards";
+            }
+        }
+	</script>
+
+
+</html>

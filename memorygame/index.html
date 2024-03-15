@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+    <title>Memory Game</title>
+</head>
+<body>
+
+    <div id="navbarContainer"></div>
+    <script>
+        // Fetch and insert navbar
+        fetch('../navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                // Insert navbar content into the container
+                document.getElementById('navbarContainer').innerHTML = html;
+            });
+    </script>
+    <script>
+		function toggleNavBtn() {
+            var nvgBtn = document.getElementById("nvgBtn");
+            if (nvgBtn.style.display === "flex") {
+                nvgBtn.style.animation = "slideUp 0.5s ease forwards";
+                setTimeout(() => {
+                    nvgBtn.style.display = "none";
+                }, 500); // Adjust timing based on animation duration
+            } else {
+                nvgBtn.style.display = "flex";
+                nvgBtn.style.animation = "slideDown 0.5s ease forwards";
+            }
+        }
+	</script>
+
+    <h1>MEMORY GAME</h1>
+    
+    <div class="game">
+        <div class="message">Game Over! Refresh to play again <br>
+            <button onclick="restartGame()"><i class="material-symbols-outlined">refresh</i></button>
+        </div>
+        <div class="timer">Time: 60s</div>
+        <div class="tiles"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+    <div id="navbarContainer"></div>
+    <script>
+        // Fetch and insert navbar
+        fetch('../navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                // Insert navbar content into the container
+                document.getElementById('navbarContainer').innerHTML = html;
+            });
+    </script>
+    <script>
+		function toggleNavBtn() {
+            var nvgBtn = document.getElementById("nvgBtn");
+            if (nvgBtn.style.display === "flex") {
+                nvgBtn.style.animation = "slideUp 0.5s ease forwards";
+                setTimeout(() => {
+                    nvgBtn.style.display = "none";
+                }, 500); // Adjust timing based on animation duration
+            } else {
+                nvgBtn.style.display = "flex";
+                nvgBtn.style.animation = "slideDown 0.5s ease forwards";
+            }
+        }
+	</script>
+
+    <div class="container">
+
+        <h1>TIC TAC TOE</h1>
+        
+        <div id="gameBoard">
+            <div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+        </div>
+
+        <div id="message">
+            <h2 id="playerText"></h2>
+            <button id="restartBtn">Restart</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
